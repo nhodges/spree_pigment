@@ -17,3 +17,6 @@ Finally, run the command below to finish installing SpreePigment:
 ```
 $ bundle exec rails g spree_pigment:install
 ```
+
+# What's Included
+* Open Iconic - https://github.com/iconic/open-iconic
