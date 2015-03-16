@@ -1,1 +1,10 @@
+/* Google Fonts: Ubuntu (Sans Serif) & Josephine Slab (Serif) */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic);
+
+
 @import 'spree/pigment/fonts/open-iconic';
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
