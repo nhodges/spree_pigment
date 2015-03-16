@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_pigment'
-  s.version     = '0.0.5'
+  s.version     = '0.0.7'
   s.summary     = 'Spree Pigment'
   s.description = 'Barebones theme framework for Spree Commerce'
   s.required_ruby_version = '>= 2.2.0'
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email     = 'devilcoders@gmail.com'
   s.homepage  = 'http://www.spreecommerce.com'
 
-  #s.files        = `git ls-files`.split("\n")
+  s.files        = `git ls-files`.split("\n")
   #s.test_files   = `git ls-files -- {test,spec,features}/*`.split("\n")
   #s.files        = Dir["{app,lib,config}/**/*"] + ["Gemfile"]
   s.require_path = 'lib'
