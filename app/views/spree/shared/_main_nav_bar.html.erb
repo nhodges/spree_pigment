@@ -1,0 +1,33 @@
+<% max_level   = Spree::Config[:max_level_in_taxons_menu] || 1 %>
+<% @categories = Spree::Taxonomy.includes(root: :children).select{ |taxonomy| taxonomy['name'] == 'Categories' } %>
+<% @order      = current_order(lock: true) %>
+<nav class="col-md-12">
+  <div id="main-nav-bar" class="navbar">
+    <ul class="nav navbar-nav" data-hook>
+      <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+    </ul>
+    <ul class="nav navbar-nav pg-dropdown">
+      <li id="categories-menu">
+      	<%= link_to 'Categories', '#' %>
+      	<ul>
+          <% unless @categories.nil? %>
+            <% @categories.each do |taxonomy| %>
+              <% cache [I18n.locale, taxonomy, max_level] do %>
+                <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
+              <% end %>
+            <% end %>
+          <% end %>
+      	</ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" data-hook>
+      <li id="link-to-cart" data-hook>
+        <%= link_to '/cart', :class => 'cart-info full' do %>
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+          <%= "(#{@order.item_count}) #{Spree.t(:cart)}" %>
+          <% if @order.item_count > 0 %><span class="amount">$<%= @order.item_total %></span><% end %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -11,7 +11,13 @@
 
 
 
-/* Styles */
+/* Styles: SCSS Modules */
+
+@import 'spree/pigment/shared/components/dropdown ';
+
+
+
+/* Styles: General Global CSS */
 
 body {
   font-family: 'Ubuntu', sans-serif;

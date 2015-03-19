@@ -1,0 +1,23 @@
+.pg-dropdown li {
+  position: relative;
+}
+
+.pg-dropdown li ul {
+  display: none;
+  left: 0;
+  padding-left: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+}
+
+.pg-dropdown li:hover ul {
+  display: block;
+}
+
+.pg-dropdown li ul a {
+  color: #000 !important;
+  &:hover {
+  	background-color: #f5f5f5 !important;
+  }
+}

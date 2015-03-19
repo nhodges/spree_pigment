@@ -1,0 +1,19 @@
+<div id="spree-header">
+  <header id="header" data-hook>
+    <div class="container">
+      <div class="row">
+        <figure id="logo" class="col-md-4" data-hook>
+          <%= link_to root_path do %>
+            <%= image_tag 'logo.png', :alt => current_store.name %>
+          <% end %>
+        </figure>
+        <%= render :partial => 'spree/shared/nav_bar' %>
+      </div>
+    </div>
+  </header>
+  <div id="navigation">
+    <div class="container">
+      <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+    </div>
+  </div>
+</div>
