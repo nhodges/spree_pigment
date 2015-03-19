@@ -1,0 +1,14 @@
+#spree-header {
+  background-color: #000;
+  background-image: none;
+  #logo img {
+    max-height: 50px;
+    width: auto;
+  }
+  #navigation {
+    background-color: #242424;
+  }
+  .nav a:hover, .nav a:focus {
+  	background-color: #5a5a5a;
+  }
+}
