@@ -22,3 +22,16 @@
 body {
   font-family: 'Ubuntu', sans-serif;
 }
+
+#spree-header {
+  background-color: #000;
+  background-image: none;
+  #logo img {
+    max-height: 50px;
+    width: auto;
+  }
+}
+
+#navigation {
+  background-color: #242424;
+}
