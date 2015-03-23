@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_pigment'
-  s.version     = '0.0.7'
+  s.version     = '0.0.15'
   s.summary     = 'Spree Pigment'
   s.description = 'Barebones theme framework for Spree Commerce'
   s.required_ruby_version = '>= 2.2.0'
