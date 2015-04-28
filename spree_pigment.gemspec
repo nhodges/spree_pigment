@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 3.0'
-  s.add_dependency 'compass-rails'
+  s.add_dependency 'compass-rails', '>= 2.0.2'
   s.add_dependency 'jquery-ui-rails'
   s.add_dependency 'deface', '~> 1.0.0rc3'
 
